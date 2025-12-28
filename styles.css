@@ -181,3 +181,89 @@ main {
     list-style-type: disc;
 
 }
+.project-section {
+    background: var(--color-bg);
+    border-radius: 20px;
+    scroll-margin-top: 150px;
+    margin-top: var(--space-md);
+}
+.project-cards {
+    display: flex;
+    gap:var(--space-5);
+    padding: var(--space-xs);
+    
+
+}
+h2 {
+    padding-top: var(--space-xl);
+    text-align: center;
+    font-size: var(--font-3xl);
+}
+h3 {
+    padding: var(--space-lg) 0;
+}
+.project-card{
+    min-height: 40vh;
+    width:30vw;
+    border: 2px solid var(--color-text);
+    margin: var(--space-lg);
+    border-radius: 10px;
+    justify-content: space-evenly;
+    padding: var(--space-lg);
+    text-align: center;
+    background:var(--color-surface);
+    color: var(--color-text);
+    border: 1px solid color-mix(in srgb, var(--color-text) 15%, transparent);
+
+}
+.project-card p {
+    color: var(--color-text-muted);
+    padding: var(--space-lg);
+    margin: var(--space-sm) auto;
+}
+
+
+/* Reusable button system */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--color-text) 15%, transparent);
+  background: var(--color-bg);
+  color: var(--color-text);
+  min-width: calc(var(--space-2xl) * 2);
+    
+}
+
+.btn:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+.btn:focus-visible{
+    background: var(--color-accent);
+    color: var(--color-bg); 
+}
+/* Slightly quieter CTA for project links */
+.btn--ghost {
+    display: inline-block;
+    color: var(--color-accent);
+    background: transparent;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: var(--space-xs); 
+    margin: var(--space-sm)
+}
+
+.btn--ghost:hover {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+.btn--ghost:focus-visible {
+    background: var(--color-accent);
+    color: var(--color-bg); 
+}
