@@ -37,3 +37,53 @@
     --font-3xl: 4rem;     /* hero line 1 */
     --font-4xl: 6.5rem;   /* hero line 2 */
 }
+body {
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-family: 'Lato', sans-serif;
+    font-size: var(--font-md);
+}
+h1, h2, h3 {
+ font-family: 'Montserrat', serif; font-weight: 700; 
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: var(--color-surface);
+    backdrop-filter: blur(12px);
+    line-height:1.5;
+    color:var(--color-text);
+    font-family: 'Lato'
+}
+.nav-bar {
+    border: 2px solid var(--color-text);
+    margin: var(--space-xl) var(--space-2xl) var(--space-md);
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: var(--space-sm) var(--space-5);
+    gap: var(--space-5);    
+
+    
+}
+nav a {
+    display: inline-block;
+    font-size: var(--font-lg);
+    padding: var(--space-sm) var(--space-5);  
+    border-radius: 5%;
+    text-decoration: none;
+    color:var(--color-text);
+    
+}
+nav a:hover {
+    color: var(--color-accent-hover);
+}
+nav a:focus-visible {
+    color: var(--color-accent-hover);       
+    
+}
