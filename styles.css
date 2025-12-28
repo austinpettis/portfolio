@@ -290,3 +290,93 @@ h3 {
   gap: var(--space-md);
   flex-wrap: wrap;
 }
+@media (max-width: 900px) {
+
+    :root {
+        --font-3xl: 2.75rem;
+        --font-4xl: 3.5rem;
+    }
+  /* Layout stacks */
+  .home-section {
+    flex-direction: column;
+    gap: var(--space-lg);
+    padding-top: var(--space-lg);
+  }
+
+  .home-right,
+  .home-left {
+    width: 100%;
+  }
+
+  /* Make the grid stop fighting on narrow screens */
+  .home-right {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  /* Social links become a row */
+  .social-links {
+    grid-column: 1;
+    grid-row: 3;
+    padding-left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Center hero text a bit and reduce left offsets */
+  .title,
+  .header-line {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .home-right h1 {
+    padding: 0;
+    text-align: center;
+  }
+
+  .home-right p {
+    text-align: center;
+    padding: var(--space-md);
+  }
+
+  /* Shrink big type so it doesn't overflow */
+  .header-line-1 { font-size: var(--font-3xl); }
+  .header-line-2 { font-size: var(--font-4xl); }
+
+  /* Image container scales down */
+  .portfolio-pic {
+    width: min(320px, 80vw);
+    height: min(320px, 80vw);
+  }
+
+  /* Projects stack */
+  .project-cards {
+    flex-direction: column;
+    padding: var(--space-md);
+  }
+
+  .project-card {
+    width: 100%;
+    margin: 0;
+  }
+  .nav-bar {
+    margin: var(--space-md);
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  nav a {
+    font-size: 1.25rem;
+    padding: var(--space-xs) var(--space-sm);
+  }
+}
+
