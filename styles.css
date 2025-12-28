@@ -267,3 +267,26 @@ h3 {
     background: var(--color-accent);
     color: var(--color-bg); 
 }
+.contact-section {
+    margin: var(--space-xl) auto;
+    padding: var(--space-xl) var(--space-lg);
+    background: var(--color-bg);
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+    scroll-margin-top: 100px;
+}
+
+.contact-subtext {
+  margin-top: var(--space-md);
+  color: var(--color-text-muted);
+  font-size: var(--font-lg);
+}
+
+.contact-actions {
+  margin-top: var(--space-lg);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
