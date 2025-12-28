@@ -1,0 +1,39 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root {
+    --color-bg: #ffffff;
+    --color-surface: #f3f4f6;
+    --color-text: #1f2937;
+    --color-text-muted: #6b7280;
+    --color-accent: #2563eb;
+    --color-accent-hover: #1d4ed8;
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+
+    --space-xs: var(--space-2);
+    --space-sm: var(--space-3);
+    --space-md: var(--space-4);
+    --space-lg: var(--space-6);
+    --space-xl: var(--space-7);
+    --space-2xl: var(--space-8);
+
+    --font-xs: 0.75rem;   /* small labels */
+    --font-sm: 0.875rem;  /* secondary text */
+    --font-md: 1rem;      /* body */
+    --font-lg: 1.25rem;   /* lead text */
+    --font-xl: 1.75rem;   /* section headings */
+    --font-2xl: 3rem;     /* h2 */
+    --font-3xl: 4rem;     /* hero line 1 */
+    --font-4xl: 6.5rem;   /* hero line 2 */
+}
