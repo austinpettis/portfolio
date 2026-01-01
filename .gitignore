@@ -1,0 +1,2 @@
+#ignore project repos, they have their own git histories
+projects/*
