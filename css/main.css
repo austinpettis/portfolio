@@ -204,7 +204,7 @@ h3 {
 }
 .project-card{
     min-height: 40vh;
-    width:30vw;
+    min-width:30vw;
     border: 2px solid var(--color-text);
     margin: var(--space-lg);
     border-radius: 10px;
